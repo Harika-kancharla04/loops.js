@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        name = prompt("Enter name:").toLowerCase();
+        s = "";
+        for (char of name) {
+            if (!s.includes(char)) {
+                s += char;
+            }
+        }
+        vowels = "";
+        consonants = "";
+        for (i = 0; i < s.length; i++) {
+            if (!(s[i] == " " || s[i] == "$")) {
+                if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
+                    vowels++;
+                }
+                else {
+                    consonants++;
+                }
+            }
+        }
+        console.log(`No.of vowels:${vowels}`);
+        console.log(`No.of consonants:${consonants}`);
+
+    </script>
+</body>
+
+</html>

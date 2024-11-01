@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let items = prompt("Enter a list of items separated by commas:");
+        let n = items.split(",");
+        largest = n[0];
+        for (i = 0; i < n.length; i++) {
+            if (n[i] > largest) {
+                largest = n[i];
+            }
+        }
+        console.log(largest);
+    </script>
+</body>
+
+</html>
